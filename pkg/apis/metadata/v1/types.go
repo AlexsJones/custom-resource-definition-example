@@ -10,7 +10,7 @@ type MetaDataContextType struct {
 	metav1.TypeMeta `json:",inline"`
 	// +optional
 	metav1.ObjectMeta `json:"metadata,omitempty"`
-	
+
 	// +optional
 	Status MetaDataContextTypeStatus `json:"status,omitempty"`
 	// This is where you can define
@@ -21,7 +21,7 @@ type MetaDataContextType struct {
 // custom spec
 type MetaDataContextSpec struct {
 	Message string `json:"message,omitempty"`
-	DataMapping map[string] string `json: "datamapping,omitempty"`
+	DataMappingExample string `json:"datamapping,omitempty"`
 }
 
 // custom status
